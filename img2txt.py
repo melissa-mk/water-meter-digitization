@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 import pytesseract
-pytesseract.pytesseract.tesseract_cmd = r"C:\Users\mutes\AppData\Local\Programs\Python\Python311\Scripts\pytesseract.exe"
+pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 # load image, grayscale, apply sharpening filter, otsu's threshold
 image = cv2.imread('C:\\Users\\mutes\\Desktop\\Melissa\\Notes\\Y3\\Emb-Sys\\T2\\water-meter-reading.jpg')
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
