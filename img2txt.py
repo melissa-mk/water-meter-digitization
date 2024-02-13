@@ -3,7 +3,7 @@ import numpy as np
 import pytesseract
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 # load image, grayscale, apply sharpening filter, otsu's threshold
-image = cv2.imread('C:\\Users\\mutes\\Desktop\\Melissa\\Notes\\Y3\\Emb-Sys\\T2\\water-meter-reading.jpg')
+image = cv2.imread('water-meter-reading.jpg')
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 sharpen_kernel = np.array([[-1,-1,-1], [-1,9,-1], [-1,-1,-1]])
 sharpen = cv2.filter2D(gray, -1, sharpen_kernel)
